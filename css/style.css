@@ -1,0 +1,263 @@
+/* css reset  */
+* {
+    margin: 0%;
+    padding: 0%;
+    }
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    position: relative;
+    top: 0%;
+    justify-content: center;
+}
+#logo {
+    margin: 5px 5px;
+    padding: 11px 11px;
+    }
+#logo img {
+    height: 60px;
+}  
+#navbar ul  {
+    list-style-type: none;
+    display: flex;
+    }
+#navbar ul li  {
+    list-style-type: none;
+    font-size: 2.5rem;
+    }  
+#navbar ul li a {
+    text-decoration: none;
+    border-radius: 23px;
+    padding: 3px 23px;
+    color: rgb(241, 205, 238);
+    display: block;
+    font-family: 'Baloo Bhaina 2';
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #e14141;
+    margin-top: 5px;
+} 
+#navbar ul li a:hover {
+    color: rgb(92, 92, 201);
+    background-color: white;
+}
+
+/* Home Section  */
+
+#home {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 358px;
+}
+#home::before {
+    content: "";
+    background: url(../img/home.jpg) no-repeat center center/ cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+.h1-primary {
+    font-size: 4rem;
+    font-weight: 1100;
+    display: block;
+    color: #181b80;
+    text-shadow: 3px 3px #ff7ef3;
+    
+    
+    font-family: 'Baloo Bhaina 2';
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 11px 11px;
+
+}
+#home p {
+    font-size: 2rem;
+    padding: 5px 5px;
+    margin: 11px 11px;
+    color: white;
+    font-family: 'Baloo Bhaina 2';
+}
+
+/* Destination Section */
+
+#destination {
+    position: relative;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+}
+#box-destination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.box {
+    
+    height: 500px;
+    width: 300px;
+    margin: 23px 23px;
+    
+    
+}
+.box img {
+    height: 300px;
+    width: 300px;
+    image-rendering: optimizeQuality;
+    border-radius: 23px;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;
+   
+    }
+
+    .box img:hover {
+        transform: scaleX(1.2) scaleY(1.1);
+        cursor: pointer;
+    }
+
+    
+
+
+    
+
+.box p {
+    font-size: 1rem;
+    font-family: 'Baloo Bhaina 2';
+    line-height: 1;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+/* How it works */
+#how {background-color: rgb(176 108 179);
+    font-family: 'Baloo Bhaina 2';
+        padding: 23px;
+        color: white;
+}
+#boxhow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.box2 {
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+}
+#how h1 {
+    font-size: 5rem;
+    border: 2px solid white;
+    border-radius: 115px;
+    display: inline-block;
+    padding: 5px;
+    margin: 15px 120px;
+    width: 159px;
+    align-self: center;
+position: relative;
+
+    
+}
+
+
+/* Services */
+#services{
+    margin: -6px 0px;
+    justify-content: center;
+    
+}
+#services::before {
+    content: "";
+    background: url('../img/ser.jpg') no-repeat center center/ cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    
+}
+
+/* Utility classes */
+.center {
+    text-align: center;
+}
+.h1-secondary {
+    font-size: 3rem;
+    padding: 12px;
+   }
+
+   .h2-secondary {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 5px;
+    padding: 5px;
+    font-size: 2rem;
+    
+}
+   .h2-primary {
+    text-align: center;
+    font-family: 'Baloo Bhaina 2';
+        margin: 5px;
+    padding: 5px;
+    font-size: 4rem;
+    color: white;
+    
+}
+
+   .btn {
+       text-align: center;
+       padding: 5px 11px;
+       margin: 5px 11px;
+       color: rgb(255, 255, 255);
+       font-family: 'Baloo Bhaina 2';
+       font-size: 2rem;
+       background-color: rgb(0, 0, 0);
+       border-radius: 28px;
+   }
+   .btn2 {
+       text-align: center;
+       padding: 5px 5px;
+       
+       color: rgb(81, 83, 211);
+       font-family: 'Baloo Bhaina 2';
+       font-size: 1.5rem;
+       background-color: rgb(184, 235, 182);
+       border-radius: 28px;
+      
+       position: relative;
+       margin-top: 5px;
+       margin-left: 65px;
+       }
+   .btn2:hover {
+       background-color: rgb(132, 230, 145);
+       cursor: pointer;
+   }
+   .btn:hover {
+       background-color: rgb(139, 132, 230);
+       cursor: pointer;
+   }
+
+   #footer
+   {
+       color: white;
+       background-color: black;
+       text-align: center;
+       display: block;
+       position: relative;
+       bottom: -340px
+       
+
+   }
+
+
